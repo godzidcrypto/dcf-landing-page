@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap'); */
+
+@font-face {
+  font-family: 'Pixel' ;
+  src: url('/resources/fonts/FreePixel.ttf') format('truetype');
+}
 
 html {
   scroll-padding-top: 14rem;
@@ -10,7 +15,7 @@ html {
 }
 
 .App {
-  font-family: 'VT323', monospace;
+  font-family: "Pixel";
   color: black;
   text-align: center;
 }
@@ -53,7 +58,7 @@ nav button {
   border-radius: 40px;
   background: linear-gradient(135deg, #FEDF57 0%, #85DDFF 100%);
   border: none;
-  font-family: 'VT323', monospace;
+  font-family: "Pixel";
   font-size: 24px;
 }
 
