@@ -6,12 +6,31 @@
 }
 
 html {
-  scroll-padding-top: 14rem;
+  scroll-padding-top: 8rem;
   /* overflow-x: hidden; */
 }
 
 *{
   scroll-behavior: smooth !important;
+}
+
+#loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  background-color: #fff;
+  z-index: 99;
+}
+
+#loading-image {
+  z-index: 100;
+  border-radius: 50%!important;
 }
 
 .App {
@@ -124,7 +143,7 @@ span {
 }
 
 .hero {
-  padding: 8rem 280px;
+  padding: 4rem 280px;
   display: flex;
   align-items: center;
 }

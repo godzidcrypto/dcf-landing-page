@@ -9,6 +9,12 @@ function App() {
   const [toggleMenu, setToggleMenu] = useState(false)
   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
+  window.addEventListener('load', (event) => {
+    const el = document.getElementById('loading');
+    console.log(el)
+    el.style.display = "none";
+  });
+
   useEffect(() => {
 
     const changeWidth = () => {
