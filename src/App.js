@@ -145,7 +145,7 @@ function App() {
             <a href="https://twitter.com/degencoinflip" target="_blank" className="nav-link" onClick={() => setToggleMenu(!toggleMenu)}>
               <img src="/twitter.png" alt="Twitter" className="nav-favicon" />
             </a>
-            <a href="https://degencoinflip.com/#" target="_blank" className="nav-link" onClick={() => setToggleMenu(!toggleMenu)}>
+            <a href="https://degencoinflip.com/" target="_blank" className="nav-link" onClick={() => setToggleMenu(!toggleMenu)}>
               <button>Double My Solana →</button>
             </a>
           </div>
