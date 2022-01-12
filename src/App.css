@@ -16,8 +16,8 @@ html {
 }
 
 body, button {
-  font-family: "Pixel";
-  /* font-family: 'Inter', sans-serif; */
+  /* font-family: "Pixel"; */
+  font-family: 'Inter', sans-serif;
 }
 
 #loading {
@@ -72,7 +72,7 @@ nav {
 nav div {
   display: flex;
   align-items: center;
-  padding-left: 24px;
+  /* padding-left: 24px; */
 }
 
 nav div img {
@@ -122,7 +122,7 @@ nav button:hover {
 }
 
 .nav-burger div {
-  width: 1rem;
+  width: 2rem;
   height: 0.15rem;
   background: white;
   border-radius: 10px;
@@ -172,12 +172,19 @@ span {
   height: 80px;
 }
 
+.partner-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 120px;
+}
+
 .partner {
   height: 200px;
   width: 200px;
   border-radius: 50%!important;
   filter: grayscale(100%);
-  margin: 20px; 
+  /* margin: 20px; */
 }
 
 .partner:hover {
@@ -188,7 +195,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px 20px; /* row-gap column gap */
+  gap: 10px 60px; /* row-gap column gap */
 }
 
 .testimonial {

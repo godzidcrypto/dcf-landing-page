@@ -50,71 +50,27 @@ function App() {
       site: "https://tajfeet.io/",
     },
     {
-      img: "/mmcc.gif",
-      site: "https://flip.meerkatmillionaires.club/",
+      img: "/solchicks.png",
+      site: "https://flip.solchicks.io/",
     },
     {
-      img: "/degendex.png",
-      site: "https://flip.degendex.io/",
-    },
-    {
-      img: "/dogecapital.png",
-      site: "https://flip.thedogecapital.com/",
-    },
-    {
-      img: "/solslugs.png",
-      site: "https://flip.solslugs.com/",
-    },
-    {
-      img: "/boryoku.gif",
-      site: "https://tajfeet.io/",
-    },
-    {
-      img: "/mmcc.gif",
-      site: "https://flip.meerkatmillionaires.club/",
-    },
-    {
-      img: "/degendex.png",
-      site: "https://flip.degendex.io/",
-    },
-    {
-      img: "/dogecapital.png",
-      site: "https://flip.thedogecapital.com/",
-    },
-    {
-      img: "/solslugs.png",
-      site: "https://flip.solslugs.com/",
-    },
-    {
-      img: "/boryoku.gif",
-      site: "https://tajfeet.io/",
+      img: "/nftradar.png",
+      site: "https://flip.solnftradar.com/",
     },
   ]
 
   const testimonials = [
+    "1475191919840006157",
     "1474990901902544900",
     "1478538876352270337",
     "1478439766408499205",
     "1478400569740042242",
     "1478417888415465483",
     "1478232998147354627",
-    "1474990901902544900",
-    "1478538876352270337",
-    "1478439766408499205",
-    "1478400569740042242",
-    "1478417888415465483",
-    "1478232998147354627",
-    "1474990901902544900",
-    "1478538876352270337",
-    "1478439766408499205",
-    "1478400569740042242",
-    "1478417888415465483",
-    "1478232998147354627",
-    "1478538876352270337",
-    "1478439766408499205",
-    "1478400569740042242",
-    "1478417888415465483",
-    "1478232998147354627",
+    "1477085631058567173",
+    "1476984398037733379",
+    "1476754061852839936",
+    "1478559125147639808",
   ]
 
   return (
@@ -136,8 +92,8 @@ function App() {
         {(toggleMenu || screenWidth > 990) && (
           <div className="nav-links">
             <a href="#about" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>About Us</a>
-            <a href="#partners" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>Partners</a>
             <a href="#testimonials" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>Testimonials</a>
+            <a href="#partners" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>Partners</a>
             <a href="https://discord.gg/EbKC53qVWZ" target="_blank" className="nav-link" onClick={() => setToggleMenu(!toggleMenu)}>
               <img src="/discord.png" alt="Discord" className="nav-favicon" />
             </a>
@@ -149,7 +105,6 @@ function App() {
             </a>
           </div>
         )}
-
       </nav>
       <div className="App-container">
         <div className="segment hero">
@@ -166,17 +121,6 @@ function App() {
           </div>
           <img src="/dcf.png" alt="" />
         </div>
-        <div className="segment partners">
-          <h1 id="partners">
-            Meet our partnered <span>NFT projects.</span>
-          </h1>
-          <p>We are the <b>trusted brand</b> of this meta.</p>
-          {partners.map((partner, index) => (
-            <a href={partner.site} target="_blank" key={index}>
-              <img src={partner.img} alt="Solana Slugs" className="partner" />
-            </a>
-          ))}
-        </div>
         <div className="segment testimonials">
           <h1 id="testimonials">
             Hear from the <span>success stories</span> of our users.
@@ -187,6 +131,19 @@ function App() {
               <div className="testimonial" key={index}>
                 <Tweet tweetId={testimonial} />
               </div>
+            ))}
+          </div>
+        </div>
+        <div className="segment partners">
+          <h1 id="partners">
+            Meet our partnered <span>NFT projects.</span>
+          </h1>
+          <p>We are the <b>trusted brand</b> of this meta.</p>
+          <div className="partner-container">
+            {partners.map((partner, index) => (
+              <a href={partner.site} target="_blank" key={index}>
+                <img src={partner.img} alt="" className="partner" />
+              </a>
             ))}
           </div>
         </div>
