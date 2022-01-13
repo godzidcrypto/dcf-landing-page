@@ -176,6 +176,27 @@ span {
   height: 80px;
 }
 
+.big-numbers {
+  margin: 0;
+  width: 100%;
+}
+
+.number-container {
+  width: 100%;
+  display: flex;
+  /* gap: 0 200px; */
+}
+
+.number {
+  width: 100%;
+  background: #FEDF57;
+  color: black;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .partner-container {
   display: flex;
   flex-wrap: wrap;
@@ -298,6 +319,10 @@ span {
 
   .feature {
     width: 100%;
+  }
+
+  .number-container {
+    flex-direction: column;
   }
 }
 

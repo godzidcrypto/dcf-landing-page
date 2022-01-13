@@ -35,6 +35,25 @@ function App() {
 
   }, [])
 
+  const numbers = [
+    {
+      number: 500,
+      title: "Total Volume"
+    },
+    {
+      number: 500,
+      title: "Total Volume"
+    },
+    {
+      number: 500,
+      title: "Total Volume"
+    },
+    {
+      number: 500,
+      title: "Total Volume"
+    },
+  ]
+
   const partners = [
     {
       img: "/mmcc.gif",
@@ -175,6 +194,16 @@ function App() {
             </a>
           </div>
           <img src="/dcf.png" alt="" />
+        </div>
+        <div className="segment big-numbers">
+          <div className="number-container">
+            {numbers.map((number, index) => (
+              <div className="number">
+                <h3>{number.title}</h3>
+                <p>{number.number}</p>
+              </div>
+            ))}
+          </div>
         </div>
         <div className="segment testimonials">
           <h1 id="testimonials">
