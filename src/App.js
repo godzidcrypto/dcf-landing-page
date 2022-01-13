@@ -8,9 +8,16 @@ function App() {
   const [toggleMenu, setToggleMenu] = useState(false)
   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
+  const [toggleFAQ, setToggleFAQ] = useState(false)
+  const toggle = index => {
+    if (toggleFAQ === index) {
+      return setToggleFAQ(null)
+    }
+    setToggleFAQ(index)
+  }
+
   window.addEventListener('load', (event) => {
     const el = document.getElementById('loading');
-    console.log(el)
     el.style.display = "none";
   });
 
@@ -100,6 +107,25 @@ function App() {
     },
   ]
 
+  const questions = [
+    {
+      question: "What is Degen Coin Flip (DCF)?",
+      answer: "Degen Coin Flip is a smart contract that allows users to play Double or Nothing with their Solana tokens. Odds are 50/50 with a 3.5% fee that goes to DCF NFT holders."
+    },
+    {
+      question: "How do I know I can Trust DCF?",
+      answer: "DCF has over 100K SOL (~16 Million USD) flipped since we started and we are the trusted platform on Solana. \n \n The DCF Team and DCF NFT holders' have aligned incentives for the game to have exactly 50/50 odds. \n \n Our House and Fee wallets are all public and every transaction can be reviewed by anyone."
+    },
+    {
+      question: "Where can I track transactions?",
+      answer: "House Wallet: \n https://explorer.solana.com/address/DLq9BPETifWi56sxmW29FVCYGhpJSupq9v6uC5cYxgQA \n \n Fee Wallet: \n https://explorer.solana.com/address/Fe77Txknt6mLx52wNq58TJ9Arwe6oEyDHUAaG7c1xo5"
+    },
+    {
+      question: "Where can I learn more?",
+      answer: "Join us on discord, there will always be someone to help you out. \n https://discord.gg/f5JGjGysHU."
+    },
+  ]
+
   return (
     <div className="App">
       <nav>
@@ -121,6 +147,8 @@ function App() {
             <a href="#about" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>About Us</a>
             <a href="#testimonials" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>Testimonials</a>
             <a href="#partners" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>Partners</a>
+            <a href="#features" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>Features</a>
+            <a href="#faq" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>FAQ</a>
             <a href="https://discord.gg/EbKC53qVWZ" target="_blank" className="nav-link" onClick={() => setToggleMenu(!toggleMenu)}>
               <img src="/discord.png" alt="Discord" className="nav-favicon" />
             </a>
@@ -188,6 +216,27 @@ function App() {
                   <h3>{feature.title}</h3>
                   <p>{feature.description}</p>
                 </div>
+            ))}
+          </div>
+        </div>
+        <div className="segment faq">
+          <h1 id="faq">
+            <span>FAQ</span>
+          </h1>
+          <p>Description for FAQ</p>
+          <div className="question-container">
+            {questions.map((question, index) => (
+              <div className="question">
+                <div className="wrap" onClick={() => toggle(index)} key={index}>
+                  <h3>{question.question}</h3>
+                  <span>{toggleFAQ === index ? "-" : "+"}</span>
+                </div>
+                {toggleFAQ === index
+                ?
+                  (<p>{question.answer}</p>)
+                : null
+                }
+              </div>
             ))}
           </div>
         </div>

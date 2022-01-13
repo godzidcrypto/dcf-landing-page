@@ -199,6 +199,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 24px;
   gap: 10px 80px; /* row-gap column gap */
 }
 
@@ -220,12 +221,9 @@ span {
   width: 600px;
   border-radius: 4px;
   box-shadow: 0 0 8px 8px #1E293B;
-  /* flex: 1 0 40%; */
-  /* box-shadow: 0 0 8px 8px gray; */
 }
 
 .feature img {
-  /* border-bottom: 1px solid; */
   width:100%;
   height:300px;
   object-fit:cover;
@@ -236,8 +234,28 @@ span {
   font-size: 16px;
 }
 
-.feature h3, p {
+.feature h3, .feature p {
   padding: 0 24px;
+}
+
+.question {
+  text-align: left;
+  width: 800px;
+}
+
+.question p {
+  font-size: 16px;
+  white-space: pre-line;
+}
+
+.wrap {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0 24px; */
+  cursor: pointer;
+  /* background: red; */
 }
 
 @media (max-width: 1300px) {
