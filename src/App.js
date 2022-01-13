@@ -73,6 +73,33 @@ function App() {
     "1478559125147639808",
   ]
 
+  const features = [
+    {
+      img: "/leaderboard.png",
+      title: "Leaderboard",
+      description: "Leaderboard Description",
+      link: "https://leaderboard.degencoinflip.com/wagmi/top",
+    },
+    {
+      img: "/supportdiscord.png",
+      title: "Support Discord Server",
+      description: "Support Server Description",
+      link: "https://discord.gg/7Pja5sHER8",
+    },
+    {
+      img: "/dcfstatistics.png",
+      title: "DCF Statistics",
+      description: "Created by DegenFaragu",
+      link: "https://dcf-statistics.nftrix.net/",
+    },
+    {
+      img: "/mixpanel.png",
+      title: "Mixpanel",
+      description: "Created by RyanHirsch",
+      link: "https://mixpanel.com/public/8pagXxBh9Jq4tC636qDB2X",
+    },
+  ]
+
   return (
     <div className="App">
       <nav>
@@ -144,6 +171,23 @@ function App() {
               <a href={partner.site} target="_blank" key={index}>
                 <img src={partner.img} alt="" className="partner" />
               </a>
+            ))}
+          </div>
+        </div>
+        <div className="segment features">
+          <h1 id="features">
+            <span>Features</span>
+          </h1>
+          <p>Description for features</p>
+          <div className="feature-container">
+            {features.map((feature, index) => (
+                <div className="feature">
+                  <a href={feature.link} target="_blank" key={index}>
+                    <img src={feature.img} alt="" />
+                  </a>
+                  <h3>{feature.title}</h3>
+                  <p>{feature.description}</p>
+                </div>
             ))}
           </div>
         </div>
