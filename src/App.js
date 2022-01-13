@@ -37,20 +37,20 @@ function App() {
 
   const numbers = [
     {
-      number: 500,
-      title: "Total Volume"
+      number: 5463,
+      title: "Total ◎ Volume "
     },
     {
-      number: 500,
-      title: "Total Volume"
+      number: 2043,
+      title: "Total Users"
     },
     {
-      number: 500,
-      title: "Total Volume"
+      number: 420234,
+      title: "Total Flips"
     },
     {
-      number: 500,
-      title: "Total Volume"
+      number: 17435644,
+      title: "Total $USD"
     },
   ]
 
@@ -200,7 +200,7 @@ function App() {
             {numbers.map((number, index) => (
               <div className="number">
                 <h3>{number.title}</h3>
-                <p>{number.number}</p>
+                <p>{number.number.toLocaleString()}</p>
               </div>
             ))}
           </div>
