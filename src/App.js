@@ -145,6 +145,24 @@ function App() {
     },
   ]
 
+  const milestones = [
+    {
+      title: "Title of Achievement",
+      date: "Dec 2021",
+      description: "Devs did something"
+    },
+    {
+      title: "Title of Achievement",
+      date: "Dec 2021",
+      description: "Devs did something"
+    },
+    {
+      title: "Title of Achievement",
+      date: "Dec 2021",
+      description: "Devs did something"
+    },
+  ]
+
   return (
     <div className="App">
       <nav>
@@ -167,6 +185,7 @@ function App() {
             <a href="#testimonials" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>Testimonials</a>
             <a href="#partners" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>Partners</a>
             <a href="#features" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>Features</a>
+            <a href="#milestones" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>Milestones</a>
             <a href="#faq" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>FAQ</a>
             <a href="https://discord.gg/EbKC53qVWZ" target="_blank" className="nav-link" onClick={() => setToggleMenu(!toggleMenu)}>
               <img src="/discord.png" alt="Discord" className="nav-favicon" />
@@ -245,6 +264,25 @@ function App() {
                   <h3>{feature.title}</h3>
                   <p>{feature.description}</p>
                 </div>
+            ))}
+          </div>
+        </div>
+        <div className="segment milestones">
+          <h1 id="milestones">
+            <span>Milestones</span>
+          </h1>
+          <p>Description of Milestones</p>
+          <div className="milestone-container">
+            {milestones.map((milestone, index) => (
+              <div className="milestone">
+                <h3>{milestone.title}</h3>
+                <div className="bar-container">
+                  <div className="bar-line bar-finished"></div>
+                  <div className="bar-dot bar-finished"></div>
+                </div>
+                <h3>{milestone.date}</h3>
+                <p>{milestone.description}</p>
+              </div>
             ))}
           </div>
         </div>
