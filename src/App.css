@@ -163,7 +163,7 @@ span {
 
 .segment {
   margin: 40px 0;
-  padding: 40px 0;
+  padding: 40px;
 }
 
 .segment p {
@@ -389,7 +389,7 @@ footer div {
 }
 
 footer h2 {
-  padding: 0 24px;
+  padding: 0 48px;
 }
 
 @media (max-width: 1300px) {
