@@ -339,6 +339,18 @@ span {
   transform: translate(-50%, -50%);
 }
 
+footer {
+  padding-bottom: 80px;
+}
+
+footer img {
+  width: 500px;
+}
+
+footer div {
+  padding: 20px 0;
+}
+
 @media (max-width: 1300px) {
   .hero {
     padding: 8rem 120px;
@@ -425,10 +437,18 @@ span {
   .testimonial-container {
     flex-direction: column;
   }
+
+  footer img {
+    width: 350px;
+  }
 }
 
 @media (max-width: 470px) {
   .question-container {
     width: 260px;
+  }
+
+  footer img {
+    width: 280px;
   }
 }

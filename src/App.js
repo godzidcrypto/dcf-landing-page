@@ -309,6 +309,21 @@ function App() {
           </div>
         </div>
       </div>
+      <footer>
+        <h2>Flip your way up with <span>Degen Coin Flip</span></h2>
+        <p>Gamble responsibly.</p>
+        <a href="https://degencoinflip.com/#" target="_blank">
+          <img src="/cta.png" alt="" />
+        </a>
+        <div>
+          <a href="https://discord.gg/EbKC53qVWZ" target="_blank" className="nav-link" onClick={() => setToggleMenu(!toggleMenu)}>
+            <img src="/discord.png" alt="Discord" className="nav-favicon" />
+          </a>
+          <a href="https://twitter.com/degencoinflip" target="_blank" className="nav-link" onClick={() => setToggleMenu(!toggleMenu)}>
+            <img src="/twitter.png" alt="Twitter" className="nav-favicon" />
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
