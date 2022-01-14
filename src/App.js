@@ -162,6 +162,51 @@ function App() {
       date: "Dec 2021",
       description: "Devs did something"
     },
+    {
+      title: "Title of Achievement",
+      date: "Dec 2021",
+      description: "Devs did something"
+    },
+    {
+      title: "Title of Achievement",
+      date: "Dec 2021",
+      description: "Devs did something"
+    },
+    {
+      title: "Title of Achievement",
+      date: "Dec 2021",
+      description: "Devs did something"
+    },
+    {
+      title: "Title of Achievement",
+      date: "Dec 2021",
+      description: "Devs did something"
+    },
+    {
+      title: "Title of Achievement",
+      date: "Dec 2021",
+      description: "Devs did something"
+    },
+    {
+      title: "Title of Achievement",
+      date: "Dec 2021",
+      description: "Devs did something"
+    },
+    {
+      title: "Title of Achievement",
+      date: "Dec 2021",
+      description: "Devs did something"
+    },
+    {
+      title: "Title of Achievement",
+      date: "Dec 2021",
+      description: "Devs did something"
+    },
+    {
+      title: "Title of Achievement",
+      date: "Dec 2021",
+      description: "Devs did something"
+    },
   ]
 
   return (
@@ -286,6 +331,7 @@ function App() {
               </div>
             ))}
           </div>
+          <img src="/scroll.png" alt="" />
         </div>
         <div className="segment faq">
           <h1 id="faq">

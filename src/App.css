@@ -148,7 +148,7 @@ span {
 }
 
 .segment {
-  margin: 50px 0;
+  margin: 40px 0;
 }
 
 .segment p {
@@ -303,22 +303,38 @@ span {
 .milestone-container {
   display: flex;
   width: 100%;
+  white-space: nowrap;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.milestone-container::-webkit-scrollbar {
+  display: none;
 }
 
 .milestone {
-  width: 100%;
+  padding: 0 24px;
+  position: relative;
 }
 
 .milestone p {
   font-size: 16px;
+  word-break: break-all;
+  white-space: normal;
+}
+
+.milestones img {
+  padding-top: 20px;
+  height: 40px;
+  filter: brightness(0) invert(1);
 }
 
 .bar-container {
-  display: flex;
-  width: 100%;
+  width: calc(100% + 48px);
+  margin: 0 -24px;
   position: relative;
-  align-items: center;
-  justify-content: center;
 }
 
 .bar-line {
