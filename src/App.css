@@ -163,7 +163,7 @@ span {
 
 .segment {
   margin: 40px 0;
-  padding: 40px;
+  padding: 40px 12px;
 }
 
 .segment p {
@@ -443,7 +443,7 @@ footer h2 {
 
 @media (max-width: 925px) {
   .hero {
-    padding: 3rem 4rem;
+    padding: 3rem 1.5rem;
     flex-direction: column;
   }
 
