@@ -479,9 +479,6 @@ footer h2 {
 }
 
 @media (max-width: 470px) {
-  h1 {
-    font-size: 28px;
-  }
   .question-container {
     width: 260px;
   }
