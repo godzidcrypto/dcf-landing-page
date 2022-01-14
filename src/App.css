@@ -356,7 +356,8 @@ span {
 }
 
 footer {
-  padding-bottom: 80px;
+  background: #1E293B;
+  padding: 80px 0;
 }
 
 footer img {
