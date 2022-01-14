@@ -1,13 +1,15 @@
 import './App.css';
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Tweet } from 'react-twitter-widgets'
 
 function App() {
 
+  // useState Variables
   const [toggleMenu, setToggleMenu] = useState(false)
   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
+  // FAQ Toggle
   const [toggleFAQ, setToggleFAQ] = useState(false)
   const toggle = index => {
     if (toggleFAQ === index) {
@@ -16,11 +18,13 @@ function App() {
     setToggleFAQ(index)
   }
 
+  // Loading Screen
   window.addEventListener('load', (event) => {
     const el = document.getElementById('loading');
     el.style.display = "none";
   });
 
+  // Navbar Window Resize
   useEffect(() => {
 
     const changeWidth = () => {
@@ -34,6 +38,95 @@ function App() {
     }
 
   }, [])
+
+  // // Fade-In
+  const [isVisible, setVisible] = useState(true);
+
+  // const domRef = useRef();
+
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(entries => {
+  //     entries.forEach(entry => entry.isIntersecting && setVisible(true));
+  //   });
+
+  //   observer.observe(domRef.current);
+
+  //   return () => observer.unobserve(domRef.current);
+  // }, []);
+
+
+  // Fade-In 2
+  // const faders = document.querySelectorAll(".fade-in-section");
+
+  // const appearOptions = {
+  //   threshold: 0,
+  //   rootMargin: "0px 0px -250px 0px"
+  // };
+  
+  // const appearOnScroll = new IntersectionObserver(function(
+  //   entries,
+  //   appearOnScroll
+  // ) {
+  //   entries.forEach(entry => {
+  //     if (!entry.isIntersecting) {
+  //       return;
+  //     } else {
+  //       entry.target.classList.add("is-visible");
+  //       appearOnScroll.unobserve(entry.target);
+  //     }
+  //   });
+  // },
+  // appearOptions);
+
+  // faders.forEach(fader => {
+  //   appearOnScroll.observe(fader);
+  // });
+
+  // Drag to Scroll
+  window.onload = function(){
+    const ele = document.getElementsByClassName('milestone-container');
+    // ele[0].scrollTop = 100;
+    // ele[0].scrollLeft = 150;
+
+    let pos = { top: 0, left: 0, x: 0, y: 0 };
+
+    const mouseDownHandler = function (e) {
+      ele[0].style.cursor = 'grabbing';
+      ele[0].style.userSelect = 'none';
+      
+      pos = {
+          // The current scroll
+          left: ele[0].scrollLeft,
+          top: ele[0].scrollTop,
+          // Get the current mouse position
+          x: e.clientX,
+          y: e.clientY,
+      };
+
+      document.addEventListener('mousemove', mouseMoveHandler);
+      document.addEventListener('mouseup', mouseUpHandler);
+    };
+
+    const mouseMoveHandler = function (e) {
+      // How far the mouse has been moved
+      const dx = e.clientX - pos.x;
+      const dy = e.clientY - pos.y;
+
+      // Scroll the element
+      ele[0].scrollTop = pos.top - dy;
+      ele[0].scrollLeft = pos.left - dx;
+    };
+
+    const mouseUpHandler = function () {
+      document.removeEventListener('mousemove', mouseMoveHandler);
+      document.removeEventListener('mouseup', mouseUpHandler);
+
+      ele[0].style.cursor = 'grab';
+      ele[0].style.removeProperty('user-select');
+    };
+
+    ele[0].addEventListener('mousedown', mouseDownHandler);
+}
 
   const numbers = [
     {
@@ -225,7 +318,7 @@ function App() {
             <div></div>
           </div>
         </div>
-        {(toggleMenu || screenWidth > 990) && (
+        {(toggleMenu || screenWidth > 1300) && (
           <div className="nav-links">
             <a href="#about" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>About Us</a>
             <a href="#testimonials" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>Testimonials</a>
@@ -246,7 +339,7 @@ function App() {
         )}
       </nav>
       <div className="App-container">
-        <div className="segment hero">
+        <div className={ `segment hero fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
           <div>
             <h1 id="about">
               <span>Double your Solana</span> with a click of a button.
@@ -260,7 +353,7 @@ function App() {
           </div>
           <img src="/dcf.png" alt="" />
         </div>
-        <div className="segment big-numbers">
+        <div className={ `segment big-numbers fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
           <div className="number-container">
             {numbers.map((number, index) => (
               <div className="number">
@@ -270,7 +363,7 @@ function App() {
             ))}
           </div>
         </div>
-        <div className="segment testimonials">
+        <div className={ `segment testimonials fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
           <h1 id="testimonials">
             Hear from the <span>success stories</span> of our users.
           </h1>
@@ -283,7 +376,7 @@ function App() {
             ))}
           </div>
         </div>
-        <div className="segment partners">
+        <div className={ `segment partners fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
           <h1 id="partners">
             Meet our partnered <span>NFT projects.</span>
           </h1>
@@ -296,7 +389,7 @@ function App() {
             ))}
           </div>
         </div>
-        <div className="segment features">
+        <div className={ `segment features fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
           <h1 id="features">
             <span>Features</span>
           </h1>
@@ -313,7 +406,7 @@ function App() {
             ))}
           </div>
         </div>
-        <div className="segment milestones">
+        <div className={ `segment milestones fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
           <h1 id="milestones">
             <span>Milestones</span>
           </h1>
@@ -333,7 +426,7 @@ function App() {
           </div>
           <img src="/scroll.png" alt="" />
         </div>
-        <div className="segment faq">
+        <div className={ `segment faq fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
           <h1 id="faq">
             <span>FAQ</span>
           </h1>
