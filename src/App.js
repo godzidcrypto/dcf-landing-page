@@ -130,19 +130,19 @@ function App() {
 
   const numbers = [
     {
-      number: 5463,
+      number: 150952,
       title: "Total ◎ Volume "
     },
     {
-      number: 2043,
+      number: 15000,
       title: "Total Users"
     },
     {
-      number: 420234,
+      number: 550000,
       title: "Total Flips"
     },
     {
-      number: 17435644,
+      number: 22642844,
       title: "Total $USD"
     },
   ]
@@ -183,39 +183,51 @@ function App() {
     "1481693042956455936",
     "1474990901902544900",
     "1478538876352270337",
+
     "1478439766408499205",
     "1478400569740042242",
     "1478417888415465483",
     "1478232998147354627",
+    
     "1477085631058567173",
     "1476984398037733379",
     "1476754061852839936",
     "1478559125147639808",
+
+    "1474511680520425472",
+    "1474556602191515651",
+    "1473069607288193038",
+    "1474649536308002819",
+    
+    "1477085631058567173",
+    "1478598851644723201",
+    "1479486746056220675",
+    "1482440612049731585",
   ]
 
   const features = [
     {
       img: "/leaderboard.png",
-      title: "Leaderboard",
-      description: "Leaderboard Description",
+      title: "🏆 DCF Leaderboard",
+      description: "The more SOL you flip, the higher points you get in our Leaderboard! You can also view the total volume made by our white-label partners!",
       link: "https://leaderboard.degencoinflip.com/wagmi/top",
     },
     {
       img: "/supportdiscord.png",
-      title: "Support Discord Server",
-      description: "Support Server Description",
+      title: "🆘 Support Discord Server",
+      description: "Need you address to get blacklisted? Is the Solana TPS messing with your flip? Open a ticket in our Support Server!",
       link: "https://discord.gg/7Pja5sHER8",
     },
     {
       img: "/dcfstatistics.png",
-      title: "DCF Statistics",
-      description: "Created by DegenFaragu",
+      title: "⏳ DCF Statistics",
+      description: "View the total volume that has been flipped for today! Created by a fellow DCF Holder, DegenFaragu",
       link: "https://dcf-statistics.nftrix.net/",
     },
     {
       img: "/mixpanel.png",
-      title: "Mixpanel",
-      description: "Created by RyanHirsch",
+      title: "📊 Mixpanel",
+      description: "View all the statistical dashboards that prove the 50/50 probability of flips! Created by a fellow DCF Holder, RyanHirsch",
       link: "https://mixpanel.com/public/8pagXxBh9Jq4tC636qDB2X",
     },
   ]
@@ -241,64 +253,124 @@ function App() {
 
   const milestones = [
     {
-      title: "Title of Achievement",
-      date: "Dec 2021",
-      description: "Devs did something"
+      title: "🥚 The Beginning",
+      date: "Dec 5th 2021",
+      description: "DegenCoinFlip’s first twitter post",
+      tweet: "1467754495329243142"
     },
     {
-      title: "Title of Achievement",
-      date: "Dec 2021",
-      description: "Devs did something"
+      title: "🚀 The Launch",
+      date: "Dec 8th 2021",
+      description: "DCF Opens mint at .33 sol, sells out instantly, and launches game all within an hour.",
+      tweet: "1468680827840221185"
     },
     {
-      title: "Title of Achievement",
-      date: "Dec 2021",
-      description: "Devs did something"
+      title: "💰 The Million Dollars",
+      date: "Dec 9th 2021",
+      description: "1 MILLION dollars flipped in two days. Up 42x from mint. 6/555 listed, top 10 in magic eden",
+      tweet: "1469408968028139532"
     },
     {
-      title: "Title of Achievement",
-      date: "Dec 2021",
-      description: "Devs did something"
+      title: "🧑‍💻 The Hack",
+      date: "Dec 10th 2021",
+      description: "Degencoinflip gets exploited by white hat hackers.",
+      tweet: "1469424664288051201"
     },
     {
-      title: "Title of Achievement",
-      date: "Dec 2021",
-      description: "Devs did something"
+      title: "⚒️ The Patch",
+      date: "Dec 11th 2021",
+      description: "All funds are restored and game is patched.",
+      tweet: "1469479724783386624"
     },
     {
-      title: "Title of Achievement",
-      date: "Dec 2021",
-      description: "Devs did something"
+      title: "⚔️ The Attacks",
+      date: "Dec 15th 2021",
+      description: "Discord attacked by competitors and banned twice",
+      tweet: "1471280390207909888"
     },
     {
-      title: "Title of Achievement",
-      date: "Dec 2021",
-      description: "Devs did something"
+      title: "💰 The 5 Million Dollars",
+      date: "Dec 22nd 2021",
+      description: "DCF crosses $5,000,000 in USD flipped",
+      tweet: "1473761607222054916",
     },
     {
-      title: "Title of Achievement",
-      date: "Dec 2021",
-      description: "Devs did something"
+      title: "👨‍🍳 The Celebrity Chef",
+      date: "Dec 24th 2021",
+      description: "DCF brings on newest member,  Restaurateur and Celebrity Chef",
+      tweet: "1474556602191515651"
     },
     {
-      title: "Title of Achievement",
-      date: "Dec 2021",
-      description: "Devs did something"
+      title: "💎 The Diamond Hands",
+      date: "Dec 26th 2021",
+      description: "DCF took the place as the number one diamond handed community in all of Solana.",
+      tweet: "1475151622246260737"
     },
     {
-      title: "Title of Achievement",
-      date: "Dec 2021",
-      description: "Devs did something"
+      title: "😺 The Meerkats",
+      date: "Dec 27th 2021",
+      description: "DCF launches it’s white-label partnership with the great Millionaire Meerkats Country Club",
+      tweet: "1475637478325321729"
     },
     {
-      title: "Title of Achievement",
-      date: "Dec 2021",
-      description: "Devs did something"
+      title: "💰 The 10 Million Dollars",
+      date: "Dec 29th 2021",
+      description: "DCF hits huge milestone $10 MILLION flipped!",
+      tweet: "1476281596911120385"
     },
     {
-      title: "Title of Achievement",
-      date: "Dec 2021",
-      description: "Devs did something"
+      title: "2️⃣ The 2 Sol Flip",
+      date: "Dec 31st 2021",
+      description: "Added 2 Sol Flip Option",
+      tweet: "1477083146654863361"
+    },
+    {
+      title: "📊 The Dex",
+      date: "January 1st 20212",
+      description: "DegenDex white-label partnership",
+      tweet: "1477351879210274819"
+    },
+    {
+      title: "🧑‍💻 The Sol Dev",
+      date: "Jan 2nd 2022",
+      description: "Brought on a great and respected member of the Sol Dev community, STACC.",
+      tweet: "1477788189385322500"
+    },
+    {
+      title: "🐶 The Doges",
+      date: "Jan 4th 2022",
+      description: "Doge Capital white-label partnership",
+      tweet: "1478443761625612295"
+    },
+    {
+      title: "🐌 The Slugs",
+      date: "Jan 6th 2022",
+      description: "Solana Slugs white-label partnership",
+      tweet: "1479214370441732097"
+    },
+    {
+      title: "🐲 The Dragons",
+      date: "Jan 9th 2022",
+      description: "Boryoku Dragonz white-label partnership",
+      tweet: "1480208628443275265"
+    },
+    {
+      title: "🤑 The Gigantic Giveaway",
+      date: "Jan 10th 2021",
+      description: "GIGANTIC 34 SOL giveaway",
+      tweet: "1480717234662088705"
+    },
+    {
+      title: "🐥 The Chicks",
+      date: "Jan 11th 2022",
+      description: "SolChicks white-label partnership",
+      tweet: "1481034472799801346"
+    },
+    {
+      title: "💳 The Player Cards",
+      date: "Jan 15th 2022",
+      description: "DCF Player Cards Announced",
+      tweet: "1482434527486087168",
     },
   ]
 
@@ -323,7 +395,7 @@ function App() {
             <a href="#about" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>About Us</a>
             <a href="#testimonials" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>Testimonials</a>
             <a href="#partners" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>Partners</a>
-            <a href="#features" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>Features</a>
+            <a href="#features" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>Tools & Data</a>
             <a href="#milestones" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>Milestones</a>
             <a href="#faq" className="nav-link nav-item" onClick={() => setToggleMenu(!toggleMenu)}>FAQ</a>
             <a href="https://discord.gg/EbKC53qVWZ" target="_blank" className="nav-link" onClick={() => setToggleMenu(!toggleMenu)}>
@@ -345,7 +417,7 @@ function App() {
               <span>Double your Solana</span> with a click of a button.
             </h1>
             <p>
-            Degen Coin Flip is a smart contract that allows users to play Double or Nothing with their Solana tokens. Odds are 50/50 with a 3.5% fee that goes to DCF NFT holders.
+            Degen Coin Flip is a smart contract that allows users to play Double or Nothing with their Solana tokens. Odds are 50/50 with a 3.5% fee that goes to DCF NFT holders. There has been over $20M USD flipped, and every single transaction through the <span><a href="https://solscan.io/account/BU6VD7ASxAcAfvAZCxQH6Rqm8RNgdj5t7Xkh4EsQtK8U" target="_blank">smart contract</a></span> is verifiable on-chain.
             </p>
             <a href="https://degencoinflip.com/#" target="_blank">
               <img src="/cta.png" alt="" />
@@ -358,16 +430,15 @@ function App() {
             {numbers.map((number, index) => (
               <div className="number">
                 <h3>{number.title}</h3>
-                <p>{number.number.toLocaleString()}</p>
+                <p>{number.number.toLocaleString()} +</p>
               </div>
             ))}
           </div>
         </div>
         <div className={ `segment testimonials fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
           <h1 id="testimonials">
-            Hear from the <span>success stories</span> of our users.
+            <span>Testimonials</span>
           </h1>
-          <p>From winstreaks to huge rewards in a matter of seconds.</p>
           <div className="testimonial-container">
             {testimonials.map((testimonial, index) => (
               <div className="testimonial" key={index}>
@@ -391,9 +462,9 @@ function App() {
         </div>
         <div className={ `segment features fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
           <h1 id="features">
-            <span>Features</span>
+            <span>Degen Coin Flip Tools & Data</span>
           </h1>
-          <p>Description for features</p>
+          {/* <p>Description for features</p> */}
           <div className="feature-container">
             {features.map((feature, index) => (
                 <div className="feature">
@@ -410,27 +481,30 @@ function App() {
           <h1 id="milestones">
             <span>Milestones</span>
           </h1>
-          <p>Description of Milestones</p>
+          {/* <img src="/scroll.png" alt="" /> */}
           <div className="milestone-container">
             {milestones.map((milestone, index) => (
-              <div className="milestone">
-                <h3>{milestone.title}</h3>
+              <div className="milestone" key={index}>
+                <h3><span>{milestone.title}</span></h3>
                 <div className="bar-container">
                   <div className="bar-line bar-finished"></div>
                   <div className="bar-dot bar-finished"></div>
                 </div>
                 <h3>{milestone.date}</h3>
                 <p>{milestone.description}</p>
+                <div className="milestone-tweet">
+                  <Tweet
+                    tweetId={milestone.tweet}
+                  />
+                </div>
               </div>
             ))}
           </div>
-          <img src="/scroll.png" alt="" />
         </div>
         <div className={ `segment faq fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
           <h1 id="faq">
             <span>FAQ</span>
           </h1>
-          <p>Description for FAQ</p>
           <div className="question-container">
             {questions.map((question, index) => (
               <div className="question">

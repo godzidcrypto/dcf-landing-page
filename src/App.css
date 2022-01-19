@@ -162,8 +162,8 @@ span {
 }
 
 .segment {
-  margin: 40px 0;
-  padding: 40px 12px;
+  /* margin: 40px 0; */
+  padding: 0 12px 80px 12px;
 }
 
 .segment p {
@@ -175,7 +175,7 @@ span {
 }
 
 .hero {
-  padding: 6rem 280px 4rem 280px;
+  padding: 6rem 200px 4rem 200px;
   display: flex;
   align-items: center;
 }
@@ -224,6 +224,10 @@ span {
 .number p {
   font-weight: 700;
 }
+
+/* .partners {
+  height: 100vh;
+} */
 
 .partner-container {
   display: flex;
@@ -328,32 +332,71 @@ span {
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   cursor: grab;
+  transform: rotateX(180deg);
 }
 
+/* width */
 .milestone-container::-webkit-scrollbar {
-  display: none;
+  width: 10px;
 }
+
+/* Track */
+.milestone-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.milestone-container::-webkit-scrollbar-thumb {
+  background: #DCDF86;
+}
+
+/* Handle on hover */
+.milestone-container::-webkit-scrollbar-thumb:hover {
+  background: #B2DEC1;
+}
+
+/* .milestone-container::-webkit-scrollbar {
+  display: none;
+} */
 
 .milestone {
-  padding: 0 24px;
+  padding: 0 48px;
   position: relative;
+  transform: rotateX(180deg);
+  /* width: 400px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+}
+
+.milestone h3 {
+  /* word-break: break-all; */
+  /* white-space: normal; */
 }
 
 .milestone p {
   font-size: 16px;
-  word-break: break-all;
+  /* word-break: break-all; */
   white-space: normal;
 }
 
 .milestones img {
-  padding: 20px 0;
-  height: 40px;
+  /* padding: 20px 0; */
+  height: 24px;
   filter: brightness(0) invert(1);
 }
 
+.milestone-tweet {
+  /* background: red; */
+  /* max-height: 300px; */
+  display: flex;
+  justify-content: center;
+  /* width: 50%; */
+}
+
 .bar-container {
-  width: calc(100% + 48px);
-  margin: 0 -24px;
+  width: calc(100% + 96px);
+  margin: 0 -48px;
   position: relative;
 }
 
