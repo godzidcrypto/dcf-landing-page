@@ -417,7 +417,7 @@ function App() {
               Double your Solana with a click of a button.
             </h1>
             <p>
-            Degen Coin Flip is a smart contract that allows users to play Double or Nothing with their Solana tokens. Odds are 50/50 with a 3.5% fee that goes to DCF NFT holders. There has been over $20M USD flipped, and every single transaction through the <span><a href="https://solscan.io/account/BU6VD7ASxAcAfvAZCxQH6Rqm8RNgdj5t7Xkh4EsQtK8U" target="_blank">smart contract</a></span> is verifiable on-chain.
+            Degen Coin Flip is a smart contract that allows users to play Double or Nothing with their Solana tokens. Odds are 50/50 with a 3.5% fee that goes to DCF NFT holders. There has been over $20M USD flipped, and every single transaction through the <a href="https://solscan.io/account/BU6VD7ASxAcAfvAZCxQH6Rqm8RNgdj5t7Xkh4EsQtK8U" target="_blank" className="colored-text">smart contract</a> is verifiable on-chain.
             </p>
             <a href="https://degencoinflip.com/#" target="_blank">
               <img src="/cta.png" alt="" />
@@ -436,8 +436,8 @@ function App() {
           </div>
         </div>
         <div className={ `segment testimonials fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
-          <h1 id="testimonials">
-            <span>Testimonials</span>
+          <h1 id="testimonials" className="colored-text">
+            Testimonial
           </h1>
           <div className="testimonial-container">
             {testimonials.map((testimonial, index) => (
@@ -448,8 +448,8 @@ function App() {
           </div>
         </div>
         <div className={ `segment partners fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
-          <h1 id="partners">
-            Meet our partnered <span>NFT projects.</span>
+          <h1 id="partners" className="colored-text">
+            Partnered NFT projects.
           </h1>
           <p>We are the <b>trusted brand</b> of this meta.</p>
           <div className="partner-container">
@@ -461,8 +461,8 @@ function App() {
           </div>
         </div>
         <div className={ `segment features fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
-          <h1 id="features">
-            <span>Degen Coin Flip Tools & Data</span>
+          <h1 id="features" className="colored-text">
+            Degen Coin Flip Tools & Data
           </h1>
           {/* <p>Description for features</p> */}
           <div className="feature-container">
@@ -478,14 +478,14 @@ function App() {
           </div>
         </div>
         <div className={ `segment milestones fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
-          <h1 id="milestones">
-            <span>Milestones</span>
+          <h1 id="milestones" className="colored-text">
+            Milestones
           </h1>
           {/* <img src="/scroll.png" alt="" /> */}
           <div className="milestone-container">
             {milestones.map((milestone, index) => (
               <div className="milestone" key={index}>
-                <h3><span>{milestone.title}</span></h3>
+                <h3>{milestone.title}</h3>
                 <div className="bar-container">
                   <div className="bar-line bar-finished"></div>
                   <div className="bar-dot bar-finished"></div>
@@ -502,15 +502,15 @@ function App() {
           </div>
         </div>
         <div className={ `segment faq fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
-          <h1 id="faq">
-            <span>FAQ</span>
+          <h1 id="faq" className="colored-text">
+            FAQ
           </h1>
           <div className="question-container">
             {questions.map((question, index) => (
               <div className="question">
                 <div className="wrap" onClick={() => toggle(index)} key={index}>
                   <h3>{question.question}</h3>
-                  <span>{toggleFAQ === index ? "-" : "+"}</span>
+                  <span className="colored-text">{toggleFAQ === index ? "-" : "+"}</span>
                 </div>
                 {toggleFAQ === index
                 ?
@@ -523,7 +523,7 @@ function App() {
         </div>
       </div>
       <footer>
-        <h2>Flip your way up with <span>Degen Coin Flip</span></h2>
+        <h2 className="colored-text">Flip your way up with Degen Coin Flip</h2>
         <p>Gamble responsibly.</p>
         <a href="https://degencoinflip.com/#" target="_blank">
           <img src="/cta.png" alt="" />
