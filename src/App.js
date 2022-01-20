@@ -130,19 +130,19 @@ function App() {
 
   const numbers = [
     {
-      number: 150952,
+      number: 174553.72,
       title: "Total ◎ Volume "
     },
     {
-      number: 15000,
+      number: 17000,
       title: "Total Users"
     },
     {
-      number: 550000,
+      number: 750000,
       title: "Total Flips"
     },
     {
-      number: 22642844,
+      number: 24612844,
       title: "Total $USD"
     },
   ]
@@ -524,7 +524,7 @@ function App() {
       </div>
       <footer>
         <h2 className="colored-text">Flip your way up with Degen Coin Flip</h2>
-        <p>Gamble responsibly.</p>
+        <p>Flip responsibly.</p>
         <a href="https://degencoinflip.com/#" target="_blank">
           <img src="/cta.png" alt="" />
         </a>
