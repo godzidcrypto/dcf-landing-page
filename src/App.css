@@ -360,7 +360,7 @@ nav button:hover {
 } */
 
 .milestone {
-  /* padding: 0 48px; */
+  padding: 0 48px;
   position: relative;
   transform: rotateX(180deg);
   /* width: 400px; */
@@ -380,11 +380,11 @@ nav button:hover {
   white-space: normal;
 }
 
-.milestones img {
-  /* padding: 20px 0; */
+/* .milestones img {
+  padding: 20px 0;
   height: 24px;
   filter: brightness(0) invert(1);
-}
+} */
 
 .milestone-tweet {
   /* background: red; */
