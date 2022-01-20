@@ -138,6 +138,13 @@ span {
   -webkit-text-fill-color: transparent; 
 }
 
+.colored-text {
+  background-image: linear-gradient(45deg, #FEDF57, #85DDFF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
 /* .fade-in-section {
   opacity: 0;
   transform: translateY(20vh);
