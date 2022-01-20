@@ -437,7 +437,7 @@ function App() {
         </div>
         <div className={ `segment testimonials fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
           <h1 id="testimonials" className="colored-text">
-            Testimonial
+            Testimonials
           </h1>
           <div className="testimonial-container">
             {testimonials.map((testimonial, index) => (
@@ -449,7 +449,7 @@ function App() {
         </div>
         <div className={ `segment partners fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
           <h1 id="partners" className="colored-text">
-            Partnered NFT projects.
+            Partnered NFT Projects
           </h1>
           <p>We are the <b>trusted brand</b> of this meta.</p>
           <div className="partner-container">

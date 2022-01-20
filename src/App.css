@@ -252,7 +252,7 @@ nav button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0 24px;
+  /* padding: 0 24px; */
   gap: 10px 80px;
 }
 
@@ -360,7 +360,7 @@ nav button:hover {
 } */
 
 .milestone {
-  padding: 0 48px;
+  /* padding: 0 48px; */
   position: relative;
   transform: rotateX(180deg);
   /* width: 400px; */
