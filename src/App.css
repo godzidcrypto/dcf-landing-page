@@ -131,13 +131,12 @@ nav button:hover {
   transform-origin: 1px;
 }
 
-em {
-  font-style: normal;
+/* span {
   background-image: linear-gradient(45deg, #FEDF57, #85DDFF);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
-}
+} */
 
 /* .fade-in-section {
   opacity: 0;

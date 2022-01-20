@@ -414,7 +414,7 @@ function App() {
         <div className={ `segment hero fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
           <div>
             <h1 id="about">
-              <em>Double your Solana</em> with a click of a button.
+              <span>Double your Solana</span> with a click of a button.
             </h1>
             <p>
             Degen Coin Flip is a smart contract that allows users to play Double or Nothing with their Solana tokens. Odds are 50/50 with a 3.5% fee that goes to DCF NFT holders. There has been over $20M USD flipped, and every single transaction through the <span><a href="https://solscan.io/account/BU6VD7ASxAcAfvAZCxQH6Rqm8RNgdj5t7Xkh4EsQtK8U" target="_blank">smart contract</a></span> is verifiable on-chain.
@@ -462,7 +462,7 @@ function App() {
         </div>
         <div className={ `segment features fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
           <h1 id="features">
-            <em>Degen Coin Flip Tools & Data</em>
+            <span>Degen Coin Flip Tools & Data</span>
           </h1>
           {/* <p>Description for features</p> */}
           <div className="feature-container">
