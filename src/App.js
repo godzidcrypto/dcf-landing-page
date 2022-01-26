@@ -176,6 +176,10 @@ function App() {
       img: "/nftradar.png",
       site: "https://flip.solnftradar.com/",
     },
+    {
+      img: "/angrydao.png",
+      site: "https://flip.angrybattleroyale.com/",
+    },
   ]
 
   const testimonials = [
@@ -371,6 +375,12 @@ function App() {
       date: "Jan 15th 2022",
       description: "DCF Player Cards Announced",
       tweet: "1482434527486087168",
+    },
+    {
+      title: "0️⃣ The 0 Listings",
+      date: "Jan 26th 2022",
+      description: "Not a single DCF NFT was listed on Magic Eden",
+      tweet: "1486210540426964994",
     },
   ]
 
