@@ -490,6 +490,10 @@ footer h2 {
     flex-direction: column;
   }
 
+  .hero h1 {
+    padding-top: 24px;
+  }
+
   .hero div {
     text-align: center;
     margin: 0;
