@@ -130,7 +130,7 @@ function App() {
 
   const numbers = [
     {
-      number: 174553.72,
+      number: 373937,
       title: "Total ◎ Volume "
     },
     {
@@ -138,11 +138,11 @@ function App() {
       title: "Total Users"
     },
     {
-      number: 750000,
+      number: 1800000,
       title: "Total Flips"
     },
     {
-      number: 24612844,
+      number: 50001924.76,
       title: "Total $USD"
     },
   ]
@@ -179,6 +179,14 @@ function App() {
     {
       img: "/angrydao.png",
       site: "https://flip.angrybattleroyale.com/",
+    },
+    {
+      img: "/visionary.png",
+      site: "https://flip.visionarystudios.io/",
+    },
+    {
+      img: "/electons.png",
+      site: "https://www.doubleorskull.com/",
     },
   ]
 
@@ -377,6 +385,12 @@ function App() {
       tweet: "1482434527486087168",
     },
     {
+      title: "🐶 The (WOOF) Millionaire",
+      date: "Jan 17th 2022",
+      description: "Made someone a millionaire",
+      tweet: "1483198982503342080",
+    },
+    {
       title: "0️⃣ The 0 Listings",
       date: "Jan 26th 2022",
       description: "Not a single DCF NFT was listed on Magic Eden",
@@ -427,7 +441,7 @@ function App() {
               Double your Solana with a click of a button.
             </h1>
             <p>
-            Degen Coin Flip is a smart contract that allows users to play Double or Nothing with their Solana tokens. Odds are 50/50 with a 3.5% fee that goes to DCF NFT holders. There has been over $20M USD flipped, and every single transaction through the <a href="https://solscan.io/account/BU6VD7ASxAcAfvAZCxQH6Rqm8RNgdj5t7Xkh4EsQtK8U" target="_blank" className="colored-text">smart contract</a> is verifiable on-chain.
+            Degen Coin Flip is a smart contract that allows users to play Double or Nothing with their Solana tokens. Odds are 50/50 with a 3.5% fee that goes to DCF NFT holders. There has been over $50M USD flipped, and every single transaction through the <a href="https://solscan.io/account/BU6VD7ASxAcAfvAZCxQH6Rqm8RNgdj5t7Xkh4EsQtK8U" target="_blank" className="colored-text">smart contract</a> is verifiable on-chain.
             </p>
             <a href="https://degencoinflip.com/#" target="_blank">
               <img src="/cta.png" alt="" />
