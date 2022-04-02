@@ -338,7 +338,7 @@ function App() {
     },
     {
       title: "📊 The Dex",
-      date: "January 1st 20212",
+      date: "January 1st 2022",
       description: "DegenDex white-label partnership",
       tweet: "1477351879210274819"
     },
@@ -368,7 +368,7 @@ function App() {
     },
     {
       title: "🤑 The Gigantic Giveaway",
-      date: "Jan 10th 2021",
+      date: "Jan 10th 2022",
       description: "GIGANTIC 34 SOL giveaway",
       tweet: "1480717234662088705"
     },
