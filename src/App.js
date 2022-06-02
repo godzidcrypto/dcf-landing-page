@@ -255,7 +255,7 @@ function App() {
     },
     {
       question: "Where can I track transactions?",
-      answer: "House Wallet: \n https://explorer.solana.com/address/DLq9BPETifWi56sxmW29FVCYGhpJSupq9v6uC5cYxgQA \n \n Fee Wallet: \n https://explorer.solana.com/address/Fe77Txknt6mLx52wNq58TJ9Arwe6oEyDHUAaG7c1xo5"
+      answer: "House Wallet: \n https://explorer.solana.com/address/D6X9pm65p7NuWrgrYQUNU1M4qvAA7ASz4GWymGuPYrtw \n \n Fee Wallet: \n https://explorer.solana.com/address/DAdbcE5SdqoQArf7V87pYR6jPNmTtEUbR2XeC1kAzZjh"
     },
     {
       question: "Where can I learn more?",
